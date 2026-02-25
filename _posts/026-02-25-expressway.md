@@ -90,7 +90,7 @@ Bingo! the IKE support Aggressive Mode which we can leaks more info like group n
 
 ## Gaining Access
 ### Attack Strategy
-So based on the information we have gather, we have a valid transformation, a group name, and the aggressive mode is allowed, then we can capture the hash and crack it to get the password.
+So based on the information we have gather, we have a valid transformation, a group name, and the aggressive mode is allowed, then we can capture the hash and crack it to get the PSK.
 
 ### Capturing the hash
 ```
