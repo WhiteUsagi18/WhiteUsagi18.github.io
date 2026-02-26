@@ -13,7 +13,7 @@ Once inside, local enumeration revealed a vulnerable version of Sudo, which allo
 
 ## Reconnaissance
 ### Scanning IP Address
-We start with a standard Nmap scan to identify open TCP ports and services:
+We start with a standard Nmap scan to identify open TCP ports and services\
 Nmap scan:
 ```
 nmap -sC -sV 10.129.4.89
