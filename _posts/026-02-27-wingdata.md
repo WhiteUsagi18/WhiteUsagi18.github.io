@@ -2,11 +2,14 @@
 title: HTB - WingData (Easy)
 date: 2026-02-26 00:00:00 +0000
 categories: [Hack The Box, Machine]
-tags: [hackthebox, machine, linux, easy]     # TAG names should always be lowercase
+tags: [hackthebox, machine, linux, easy, wingftp, lua, rce, python, tarfile]     # TAG names should always be lowercase
 image: /assets/img/wingdata/image%201.png
 ---
 
 ## Summary Exploitation
+The WingData machine on Hack The Box was a sophisticated easy-level challenge that demonstrated how modern security filters can be bypassed through logic flaws and system-level constraints. After an initial Nmap scan revealed a Wing FTP Server (v7.4.3), I identified CVE-2025-47812, a Pre-Auth Session Poisoning vulnerability. By injecting a NULL byte and a Lua payload into the username field, I bypassed authentication and poisoned a server-side session file. Since the server uses loadfile() to restore sessions, I successfully triggered a reverse shell upon accessing the poisoned session.
+
+After gaining a foothold, I performed lateral movement by cracking a password hash found in a leaked users.xml file. Using the default WingFTP salt, I recovered the password for the user wacky, allowing for SSH access. For the final escalation, I analyzed a Python backup restoration script running as root. Despite the script’s use of the "secure" filter="data" parameter in the tarfile module, it was vulnerable to CVE-2025-4517. By crafting a malicious tarball that exceeded the Linux PATH_MAX (4096 bytes) limit via deeply nested directories, I blinded the filter's path validation. This allowed me to use a hardlink inode hijack to overwrite the /etc/sudoers file, successfully escalating my privileges to root.
 
 ## Reconnaissance
 ### Scanning IP Address
