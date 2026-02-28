@@ -1,6 +1,6 @@
 ---
 title: HTB - WingData (Easy)
-date: 2026-02-26 00:00:00 +0000
+date: 2026-02-28 00:00:00 +0000
 categories: [Hack The Box, Machine]
 tags: [hackthebox, machine, linux, easy, wingftp, lua, rce, python, tarfile]     # TAG names should always be lowercase
 image: /assets/img/wingdata/image%201.png
