@@ -16,7 +16,7 @@ timezone: Asia/Kuala_Lumpur
 
 title: WhiteUsagi # the main title
 
-tagline: arnab # it will display as the subtitle
+tagline: I want to sleep # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A doc site for my writeup, notes and research.
