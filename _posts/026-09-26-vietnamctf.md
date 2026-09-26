@@ -134,7 +134,7 @@ Now all teams have same condition to solve the challenges, NO INTERNET NO AI.
 
 But after a while of us trying to push, our position suddenly dropped to the bottom. At that time I was suspicious because in the first 2 hours we could climb the scoreboard, so why did we suddenly drop? So I tried to inspect the "solved teams" for the challenge that I struggled with. I was shocked to discover that the timestamps for every team were really close together. Imagine the first blood on the challenge is at 10:30 AM, then the next team solves at 11:09 AM, then continuing at 11:15 AM, 11:18 AM, 11:23 AM, 11:26 AM, and even 2 teams that solved at the same time 11:29 AM! The actual timestamps are not correct because Im just trying to remember them, but the time between their solves was really short. I even asked Aliff to see that this kind of activity was suspicious. But I still think positive that they actually playing clean heh.
 
-If you are curious on how the difficult the challenges are, I put it here the list of attack path that I remember for each web challenge (I could be wrong because there are challenges that I didn't have enough time to solve and just doing recon on the surface):
+If you are curious about how difficult the challenges are, I put it here the list of attack path that I remember for each web challenge (I could be wrong because there are challenges that I didn't have enough time to solve and just doing recon on the surface):
 
 1. BAC in GraphQL Request
 2. Protoype Pollution
