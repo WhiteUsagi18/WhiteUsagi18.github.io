@@ -134,10 +134,22 @@ Now all teams have same condition to solve the challenges, NO INTERNET NO AI.
 
 But after a while of us trying to push, our position suddenly dropped to the bottom. At that time I was suspicious because in the first 2 hours we could climb the scoreboard, so why did we suddenly drop? So I tried to inspect the "solved teams" for the challenge that I struggled with. I was shocked to discover that the timestamps for every team were really close together. Imagine the first blood on the challenge is at 10:30 AM, then the next team solves at 11:09 AM, then continuing at 11:15 AM, 11:18 AM, 11:23 AM, 11:26 AM, and even 2 teams that solved at the same time 11:29 AM! The actual timestamps are not correct because Im just trying to remember them, but the time between their solves was really short. I even asked Aliff to see that this kind of activity was suspicious. But I still think positive that they actually playing clean heh.
 
+If you are curious on how the difficult the challenges are, I put it here the list of attack path that I remember for each web challenge (I could be wrong because there are challenges that I didn't have enough time to solve and just doing recon on the surface):
+
+1. BAC in GraphQL Request
+2. Protoype Pollution
+3. Bypassing Middleware/Proxy Header checking
+4. Blind PostgreSQL Injection with blacklisted character
+5. SSRF with blacklisted character
+6. SSTI to RCE with blacklist class and object
+7. CORS misconfiguration
+
+There are more than this, and I don't know what level of difficulty for this kind of challenge but definitely not for beginner lol. Important to remember that all web challenges are BLACKBOX!! NO SOURCE CODE REVIEW
+
 Also, the total of the challenges is more than 15!!!!! Wtf is going on with this CTF??
 
 ### How we discovered the cheat
-This one is kinda funny how we actually found this. One of my teammates was trying to solve the hardware challenge and the description said to scan the WiFi. So he assumed that we needed to use Wireshark for this and capture the network traffic in the room. Then suddenly we found that there were many packets coming from AI domains like claude and chatgpt HAHAHA. Actually, if we took a look at the WiFi discovery, there were many open hotspots from other teams haha. We also saw a team behind us using chatgpt, but the examiner was not doing anything lollll. So basically:
+This one is kinda funny how we actually found this. One of my teammates was trying to solve the hardware challenge and the description said to scan the WiFi or something. So he assumed that we needed to use Wireshark for this and capture the network traffic in the room. Then suddenly we found that there were many packets coming from AI domains like claude and chatgpt HAHAHA. Actually, if we took a look at the WiFi discovery, there were many open hotspots from other teams haha. We also saw a team behind us using chatgpt, but the examiner was not doing anything lollll. So basically:
 
 1. There were a lot of hotspots open.
 2. We saw other teams with AI windows open on their laptops.
@@ -157,10 +169,12 @@ I laughed so hard when I read this, because what kind of "skilled hackers" don't
 
 Don't get me wrong, if you win with your own skill then don't feel offended by my words. But if you are cheating, this post is exactly for you.
 
-After the competition ended, I heard from another Malaysian team that they were warned for using their mobile phones during the competition, while Vietnamese teams could use theirs freely. This also happened to ciko when he tried to text our lecturers about the halal food we needed to receive.
+After the competition ended, I heard from another Malaysian team that they were warned for using their mobile phones during the competition, while other teams could use theirs freely. This also happened to ciko when he tried to text our lecturers about the halal food we needed to receive. Also they complained that all teams in their room are using AI to solve the challenges lmao.
+
+There are more issue that we faced like the language barrier (the volunteers can't speak in english even the event is international level) making the communication difficult and we miss important information + lack of technical support.
 
 ## The Closing Ceremony
-So that's what happened to us on the competition day. Then we requested clarification from the organizer, or more specifically from the one who handled the infrastructure and challenges. But as usual, dorang pusing selagi boleh. No comment on that.
+So that's what happened to us on the competition day. Then we requested clarification from the organizer, or more specifically from the one who handled the infrastructure and challenges. But as usual, dorang pusing selagi boleh. No comment on that sebab mengarut gila.
 
 But not all the Vietnamese players are like this. We were also approached by the local teams and they said its better for us to participate in another CTF like in Ho Chi Minh or Hanoi rather than this one, since this CTF is trash. Meaning, not only are we not the only ones who are unsatisfied with the results and how they played, but the local players feel the same way too.
 
@@ -170,6 +184,14 @@ We also got support from the Vietnamese players on discord:
 
 ![vietnam agree 2](/assets/img/vietnamctf/image%2020.png)
 
-![vietnam agree 3](/assets/img/vietnamctf/image%2021.png)
+![vietnam agree 3](/assets/img/vietnamctf/image%2022.png)
+
+![vietnam agree 4](/assets/img/vietnamctf/image%2021.png)
+
+![vietnam agree 5](/assets/img/vietnamctf/image%2023.png)
+
+![vietnam agree 6](/assets/img/vietnamctf/image%2024.png)
+
+![vietnam agree 7](/assets/img/vietnamctf/image%2025.png)
 
 What a crazy experience...
